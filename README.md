@@ -37,11 +37,18 @@ The Excel [NOT function](https://exceljet.net/excel-functions/excel-not-function
 *=NOT (logical)*
 
     =IF(NOT(A1=B1);"A1 is not equal to B1";"A1 is equal to B1")
-### Nesting logical operators
+### Nested logical operators
 
-
+![Nested logical operators](nested_logical.png?raw=true "Nested logical operators")
 
     =IF(NOT(AND(A1=B1;C1=D1));"OK";"Not OK")
+1. A1=B1 evaluates to **TRUE**, because 1=1
+1. C1=D1 evaluates to **FALSE**, because 2<>3
+1. AND(A1=B1;C1=D1) evaluates to **FALSE**, because not all parameters evaluates to **TRUE**.
+1. NOT(AND(A1=B1;C1=D1)) evaluates to **TRUE**, because it negates the **FALSE** evaluation of AND(...).
+
+**To sum it up:** NOT(AND(TRUE;FALSE)) = NOT(FALSE) = TRUE
+
 ### IFERROR()
 
 ## Text functions
