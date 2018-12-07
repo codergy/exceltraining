@@ -1,5 +1,5 @@
-# Basic Excel training
-Basic Excel training for co-workers - DRAFT
+# Basic Excel training - DRAFT
+Basic Excel training for co-workers
 
 ## Table of Contents
 
